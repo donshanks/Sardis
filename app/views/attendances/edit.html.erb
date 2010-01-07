@@ -1,0 +1,32 @@
+<h1>Editing attendance</h1>
+
+<% form_for(@attendance) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </p>
+  <p>
+    <%= f.label :person_id %><br />
+    <%= f.text_field :person_id %>
+  </p>
+  <p>
+    <%= f.label :event_date %><br />
+    <%= f.text_field :event_date %>
+  </p>
+  <p>
+    <%= f.label :attended %><br />
+    <%= f.text_field :attended %>
+  </p>
+  <p>
+    <%= f.label :event_id %><br />
+    <%= f.text_field :event_id %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @attendance %> |
+<%= link_to 'Back', attendances_path %>

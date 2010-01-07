@@ -1,0 +1,18 @@
+<p>
+  <b>Id:</b>
+  <%=h @burden.id %>
+</p>
+
+<p>
+  <b>Person:</b>
+  <%=h @burden.person_id %>
+</p>
+
+<p>
+  <b>Mnistry:</b>
+  <%=h @burden.mnistry_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_burden_path(@burden) %> |
+<%= link_to 'Back', burdens_path %>

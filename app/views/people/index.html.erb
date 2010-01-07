@@ -1,0 +1,42 @@
+<h1>Listing people</h1>
+
+<table>
+  <tr>
+    <th>Fname</th>
+    <th>Mname</th>
+    <th>Lname</th>
+    <th>Suffix</th>
+    <th>Family</th>
+    <th>Marital status</th>
+    <th>Date of birth</th>
+    <th>Date of baptism</th>
+    <th>Date of dedication</th>
+    <th>Date of marriage</th>
+    <th>Status</th>
+    <th>Member</th>
+  </tr>
+
+<% for person in @people %>
+  <tr>
+    <td><%=h person.fname %></td>
+    <td><%=h person.mname %></td>
+    <td><%=h person.lname %></td>
+    <td><%=h person.suffix %></td>
+    <td><%=h person.family_id %></td>
+    <td><%=h person.marital_status %></td>
+    <td><%=h person.date_of_birth %></td>
+    <td><%=h person.date_of_baptism %></td>
+    <td><%=h person.date_of_dedication %></td>
+    <td><%=h person.date_of_marriage %></td>
+    <td><%=h person.status %></td>
+    <td><%=h person.member %></td>
+    <td><%= link_to 'Show', person %></td>
+    <td><%= link_to 'Edit', edit_person_path(person) %></td>
+    <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New person', new_person_path %>

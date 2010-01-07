@@ -1,0 +1,63 @@
+<p>
+  <b>Fname:</b>
+  <%=h @person.fname %>
+</p>
+
+<p>
+  <b>Mname:</b>
+  <%=h @person.mname %>
+</p>
+
+<p>
+  <b>Lname:</b>
+  <%=h @person.lname %>
+</p>
+
+<p>
+  <b>Suffix:</b>
+  <%=h @person.suffix %>
+</p>
+
+<p>
+  <b>Family:</b>
+  <%=h @person.family_id %>
+</p>
+
+<p>
+  <b>Marital status:</b>
+  <%=h @person.marital_status %>
+</p>
+
+<p>
+  <b>Date of birth:</b>
+  <%=h @person.date_of_birth %>
+</p>
+
+<p>
+  <b>Date of baptism:</b>
+  <%=h @person.date_of_baptism %>
+</p>
+
+<p>
+  <b>Date of dedication:</b>
+  <%=h @person.date_of_dedication %>
+</p>
+
+<p>
+  <b>Date of marriage:</b>
+  <%=h @person.date_of_marriage %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @person.status %>
+</p>
+
+<p>
+  <b>Member:</b>
+  <%=h @person.member %>
+</p>
+
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>

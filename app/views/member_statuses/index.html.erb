@@ -1,0 +1,24 @@
+<h1>Listing member_statuses</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+
+<% for member_status in @member_statuses %>
+  <tr>
+    <td><%=h member_status.id %></td>
+    <td><%=h member_status.name %></td>
+    <td><%=h member_status.description %></td>
+    <td><%= link_to 'Show', member_status %></td>
+    <td><%= link_to 'Edit', edit_member_status_path(member_status) %></td>
+    <td><%= link_to 'Destroy', member_status, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New member_status', new_member_status_path %>

@@ -1,0 +1,26 @@
+<h1>Listing ministries</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Department head</th>
+  </tr>
+
+<% for ministries in @ministries %>
+  <tr>
+    <td><%=h ministries.id %></td>
+    <td><%=h ministries.name %></td>
+    <td><%=h ministries.description %></td>
+    <td><%=h ministries.department_head %></td>
+    <td><%= link_to 'Show', ministries %></td>
+    <td><%= link_to 'Edit', edit_ministries_path(ministries) %></td>
+    <td><%= link_to 'Destroy', ministries, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New ministries', new_ministries_path %>

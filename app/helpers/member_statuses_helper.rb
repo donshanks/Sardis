@@ -1,0 +1,2 @@
+module MemberStatusesHelper
+end

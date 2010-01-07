@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  fname: 
+  mname: 
+  lname: 
+  suffix: 
+  family_id: 
+  marital_status: 
+  date_of_birth: 
+  date_of_baptism: 
+  date_of_dedication: 
+  date_of_marriage: 
+  status: 
+  member: MyString
+
+two:
+  fname: 
+  mname: 
+  lname: 
+  suffix: 
+  family_id: 
+  marital_status: 
+  date_of_birth: 
+  date_of_baptism: 
+  date_of_dedication: 
+  date_of_marriage: 
+  status: 
+  member: MyString

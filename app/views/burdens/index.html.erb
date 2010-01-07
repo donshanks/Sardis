@@ -1,0 +1,24 @@
+<h1>Listing burdens</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Person</th>
+    <th>Mnistry</th>
+  </tr>
+
+<% for burden in @burdens %>
+  <tr>
+    <td><%=h burden.id %></td>
+    <td><%=h burden.person_id %></td>
+    <td><%=h burden.mnistry_id %></td>
+    <td><%= link_to 'Show', burden %></td>
+    <td><%= link_to 'Edit', edit_burden_path(burden) %></td>
+    <td><%= link_to 'Destroy', burden, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New burden', new_burden_path %>

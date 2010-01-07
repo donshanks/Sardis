@@ -1,0 +1,18 @@
+<p>
+  <b>Id:</b>
+  <%=h @member_status.id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @member_status.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @member_status.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_member_status_path(@member_status) %> |
+<%= link_to 'Back', member_statuses_path %>

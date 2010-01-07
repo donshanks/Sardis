@@ -1,0 +1,23 @@
+<p>
+  <b>Id:</b>
+  <%=h @ministries.id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @ministries.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @ministries.description %>
+</p>
+
+<p>
+  <b>Department head:</b>
+  <%=h @ministries.department_head %>
+</p>
+
+
+<%= link_to 'Edit', edit_ministries_path(@ministries) %> |
+<%= link_to 'Back', ministries_path %>

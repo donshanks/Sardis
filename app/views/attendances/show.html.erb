@@ -1,0 +1,28 @@
+<p>
+  <b>Id:</b>
+  <%=h @attendance.id %>
+</p>
+
+<p>
+  <b>Person:</b>
+  <%=h @attendance.person_id %>
+</p>
+
+<p>
+  <b>Event date:</b>
+  <%=h @attendance.event_date %>
+</p>
+
+<p>
+  <b>Attended:</b>
+  <%=h @attendance.attended %>
+</p>
+
+<p>
+  <b>Event:</b>
+  <%=h @attendance.event_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_attendance_path(@attendance) %> |
+<%= link_to 'Back', attendances_path %>

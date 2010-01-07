@@ -1,0 +1,59 @@
+<h1>New person</h1>
+
+<% form_for(@person) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :fname %><br />
+    <%= f.text_field :fname %>
+  </p>
+  <p>
+    <%= f.label :mname %><br />
+    <%= f.text_field :mname %>
+  </p>
+  <p>
+    <%= f.label :lname %><br />
+    <%= f.text_field :lname %>
+  </p>
+  <p>
+    <%= f.label :suffix %><br />
+    <%= f.text_field :suffix %>
+  </p>
+  <p>
+    <%= f.label :family_id %><br />
+    <%= f.text_field :family_id %>
+  </p>
+  <p>
+    <%= f.label :marital_status %><br />
+    <%= f.text_field :marital_status %>
+  </p>
+  <p>
+    <%= f.label :date_of_birth %><br />
+    <%= f.text_field :date_of_birth %>
+  </p>
+  <p>
+    <%= f.label :date_of_baptism %><br />
+    <%= f.text_field :date_of_baptism %>
+  </p>
+  <p>
+    <%= f.label :date_of_dedication %><br />
+    <%= f.text_field :date_of_dedication %>
+  </p>
+  <p>
+    <%= f.label :date_of_marriage %><br />
+    <%= f.text_field :date_of_marriage %>
+  </p>
+  <p>
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </p>
+  <p>
+    <%= f.label :member %><br />
+    <%= f.text_field :member %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', people_path %>

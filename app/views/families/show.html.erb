@@ -1,0 +1,33 @@
+<p>
+  <b>Family name:</b>
+  <%=h @family.family_name %>
+</p>
+
+<p>
+  <b>Address1:</b>
+  <%=h @family.address1 %>
+</p>
+
+<p>
+  <b>Address2:</b>
+  <%=h @family.address2 %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%=h @family.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%=h @family.state %>
+</p>
+
+<p>
+  <b>Zip code:</b>
+  <%=h @family.zip_code %>
+</p>
+
+
+<%= link_to 'Edit', edit_family_path(@family) %> |
+<%= link_to 'Back', families_path %>

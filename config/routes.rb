@@ -1,4 +1,22 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :phone_types
+
+  map.resources :events
+
+  map.resources :attendances
+
+  map.resources :burdens
+
+  map.resources :ministries
+
+  map.resources :member_statuses
+
+  map.resources :phones
+
+  map.resources :families
+
+  map.resources :people
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
