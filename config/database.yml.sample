@@ -1,0 +1,22 @@
+login: &login
+  adapter: mysql
+  host: localhost
+  encoding: utf8
+  username: root
+  password: root
+
+development:
+  database: sardis_development
+  <<: *login
+
+test:
+  database: sardis_test
+  <<: *login
+
+production:
+  database: sardis
+  adapter: mysql
+  host: localhost
+  encoding: utf8
+  username: root
+  password: 
